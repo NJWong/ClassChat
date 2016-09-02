@@ -190,13 +190,6 @@ main, #messages-card {
   }
   #user-container {
     top: 72px;
-    /*background-color: rgb(3,155,229);*/
-    /*background-color: red;*/
-
-    /*background: -moz-linear-gradient(top,  #5fcae8 0%, #0cffa6 100%); !* FF3.6-15 *!*/
-    /*background: -webkit-linear-gradient(top,  #5fcae8 0%,#0cffa6 100%); !* Chrome10-25,Safari5.1-6 *!*/
-    /*background: linear-gradient(to bottom,  #5fcae8 0%,#0cffa6 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
-
     height: 38px;
     padding-top: 3px;
     padding-right: 2px;
@@ -209,13 +202,28 @@ main, #messages-card {
   }
 }
 .mdl-textfield__label:after {
-  /*background-color: #F44336;*/
+  background-color: #D32F2F;
 }
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
-  /*color: #F44336;*/
+  color: #D32F2F;
 }
 .mdl-button .material-icons {
   top: -1px;
   margin-right: 5px;
 }
 
+.mdl-mini-footer {
+  justify-content: center;
+}
+
+.mdl-mini-footer a img {
+  position: relative;
+  bottom: 1px;
+  right: 4px;
+}
+
+.mdl-mini-footer a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #D32F2F;
+}
