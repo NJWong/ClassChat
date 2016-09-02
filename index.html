@@ -31,7 +31,8 @@
 
   <!-- Material Design Lite -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+  <!--<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">-->
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.grey-red.min.css" />
   <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
   <!-- App Styling -->
@@ -41,10 +42,11 @@
 <body>
 <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <!-- Header section containing logo -->
+
   <header class="mdl-layout__header mdl-color-text--white mdl-color--red-700">
     <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
       <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-        <h3><i class="material-icons">chat_bubble_outline</i> Class Chat</h3>
+        <h3><i class="material-icons">chat_bubble_outline</i> Class Chat - FIT3083</h3>
       </div>
       <div id="user-container">
         <div hidden id="user-pic"></div>
@@ -58,16 +60,6 @@
       </div>
     </div>
   </header>
-
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Side Nav</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="#">Link 1</a>
-      <a class="mdl-navigation__link" href="#">Link 2</a>
-      <a class="mdl-navigation__link" href="#">Link 3</a>
-      <a class="mdl-navigation__link" href="#">Link 4</a>
-    </nav>
-  </div>
 
   <main class="mdl-layout__content mdl-color--grey-100">
     <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
@@ -92,7 +84,7 @@
           </form>
           <form id="image-form" action="#">
             <input id="mediaCapture" type="file" accept="image/*,capture=camera">
-            <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400 mdl-color-text--white">
+            <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--red-700 mdl-color-text--white">
               <i class="material-icons">image</i>
             </button>
           </form>

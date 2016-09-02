@@ -191,7 +191,7 @@ main, #messages-card {
   #user-container {
     top: 72px;
     /*background-color: rgb(3,155,229);*/
-    background-color: red;
+    /*background-color: red;*/
 
     /*background: -moz-linear-gradient(top,  #5fcae8 0%, #0cffa6 100%); !* FF3.6-15 *!*/
     /*background: -webkit-linear-gradient(top,  #5fcae8 0%,#0cffa6 100%); !* Chrome10-25,Safari5.1-6 *!*/
@@ -202,17 +202,17 @@ main, #messages-card {
     padding-right: 2px;
   }
   #user-container #user-pic {
-    top: 2px;
+    top: 1px;
     width: 33px;
     height: 33px;
     background-size: 33px;
   }
 }
 .mdl-textfield__label:after {
-  background-color: #F44336;
+  /*background-color: #F44336;*/
 }
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
-  color: #F44336;
+  /*color: #F44336;*/
 }
 .mdl-button .material-icons {
   top: -1px;
