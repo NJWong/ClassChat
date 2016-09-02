@@ -15,8 +15,8 @@ This application uses [*Material Design Lite*](https://getmdl.io/index.html) for
 Finally, this application is hosted using [*GitHub Pages*](https://pages.github.com/).
 
 ### Using this app in University
-For one of my University units we are required to participate in an online quiz to test our understanding of the course material. Thus, there is a heavy emphasis on group discussion. The class is quite large and it can become quite loud during this time, so it's really only possible to talk with people very close to you.
+For one of my University units we are required to participate in an online quiz during every lecture. The questions require short to medium answers and aim to test everyone's understanding of the material. Thus, there is a heavy emphasis on group discussion. The class is quite large and it can become quite loud during this time, so it's really only possible to talk with people very close to you.
 
-I was curious to see how class discussion could be facilitated using an online real time chat, so that is another reason why I have created and deployed this application. My peers would want a short and easy sign in process otherwise no one would be bothered to use it. All Monash students have a Google student account, so using Google's authentication service was a logical choice.
+I was curious to see how class discussion could be facilitated using an online real time chat, so that is another reason why I modified and deployed this application. My peers would want a short and easy sign in process otherwise no one would be bothered to use it. All Monash students have a Google student account, so using Google's authentication service was a logical choice.
 
 The idea is to just share the link with your class mates, sign in using your student Google account, and then you can contribute to the discussion. Quick, easy, seamless.
