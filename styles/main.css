@@ -212,6 +212,10 @@ main, #messages-card {
   margin-right: 5px;
 }
 
+#must-signin-snackbar {
+  bottom: 88px;
+}
+
 .mdl-mini-footer {
   justify-content: center;
 }
