@@ -88,7 +88,7 @@ FriendlyChat.prototype.saveMessage = function(e) {
     this.messagesRef.push({
       name: currentUser.displayName,
       text: this.messageInput.value,
-      photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
+      photoUrl: currentUser.photoURL || '../images/profile_placeholder.png'
     }).then(function() {
       // Clear message text field and SEND button state.
       FriendlyChat.resetMaterialTextfield(this.messageInput);
