@@ -25,8 +25,8 @@ function ClassChat() {
   // TODO make these not hard coded later
   // this.messageForm1.addEventListener('submit', this.saveMessage1.bind(this));
   //
-  // this.signOutButton.addEventListener('click', this.signOut.bind(this));
-  // this.signInButton.addEventListener('click', this.signIn.bind(this));
+  this.signOutButton.addEventListener('click', this.signOut.bind(this));
+  this.signInButton.addEventListener('click', this.signIn.bind(this));
 
   /* Event listeners for toggling the "Send" button */
   var buttonTogglingHandler = this.toggleButton.bind(this);
@@ -214,12 +214,7 @@ ClassChat.prototype.checkSignedInWithMessage = function() {
 };
 
 /** Resets the given MaterialTextField */
-ClassChat.resetMaterialTextfield1 = function(element) {
-  element.value = '';
-  element.parentNode.MaterialTextfield.boundUpdateClassesHandler();
-};
-
-ClassChat.resetMaterialTextfield2 = function(element) {
+ClassChat.resetMaterialTextfield = function(element) {
   element.value = '';
   element.parentNode.MaterialTextfield.boundUpdateClassesHandler();
 };
@@ -261,39 +256,33 @@ ClassChat.prototype.displayThread = function(key, title) {
   var div = document.getElementById(key);
 
   if (!div) {
-    var container = document.createElement('div');
-    container.innerHTML = ClassChat.QUESTION_THREAD;
 
-    var messages_card_container = container.firstChild;
-    messages_card_container.setAttribute('id', key);
+    var $question_thread = $($.parseHTML(ClassChat.QUESTION_THREAD));
+    $question_thread.attr('id', key);
 
-    var messages_card = messages_card_container.firstChild;
+    var $question_thread_title = $question_thread.find('.mdl-card__title-text');
+    $question_thread_title.text(title);
 
-    var thread_title_text = messages_card.firstChild.firstChild;
-    thread_title_text.innerHTML = title;
+    var $thread_messages = $question_thread.find('.messages');
+    $thread_messages.attr('id', key + '/messages');
 
-    var thread_content = messages_card.childNodes[1];
+    var $thread_form = $question_thread.find('form');
+    $thread_form.attr('id', key + 'message-form');
 
-    var messages_section = thread_content.childNodes[0];
-    messages_section.setAttribute('id', key + '/messages');
+    var $thread_form_input = $question_thread.find('input');
+    $thread_form_input.attr('id', key + 'message');
 
-    var thread_form = thread_content.childNodes[1];
-    thread_form.setAttribute('id', key + '/message-form');
+    var $thread_form_label = $question_thread.find('label');
+    $thread_form_label.attr('for', key + 'message');
 
-    var form_textfield = thread_form.childNodes[0];
-    componentHandler.upgradeElement(form_textfield, 'MaterialTextfield');
-    // componentHandler.upgradeAllRegistered();
+    var $thread_button = $question_thread.find('button');
+    $thread_button.attr('id', key + 'submit');
 
-    var form_input = form_textfield.childNodes[0];
-    form_input.setAttribute('id', key + '/message');
+    /* Material Design Lite needs to upgrade this element */
+    var $thread_textfield = $question_thread.find('.mdl-textfield');
+    componentHandler.upgradeElement($thread_textfield[0], 'MaterialTextfield');
 
-    var form_label = form_textfield.childNodes[1];
-    form_label.setAttribute('for', key + '/message');
-
-    var form_button = thread_form.childNodes[1];
-    form_button.setAttribute('id', key + '/submit');
-
-    this.questionThreadsContainer.appendChild(container);
+    $question_thread.appendTo('#question-threads-container');
   }
 };
 

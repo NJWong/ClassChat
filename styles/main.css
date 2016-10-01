@@ -72,6 +72,7 @@ main, .messages-card {
 .message-container.visible {
   opacity: 1;
 }
+
 .message-container .pic {
   background-image: url('../images/profile_placeholder.png');
   background-repeat: no-repeat;
