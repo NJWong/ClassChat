@@ -24,12 +24,12 @@ function ClassChat() {
   /* Event listeners for saving a message, signing in, and signing out */
   // TODO make these not hard coded later
   // this.messageForm1.addEventListener('submit', this.saveMessage1.bind(this));
-  //
+
   this.signOutButton.addEventListener('click', this.signOut.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
 
   /* Event listeners for toggling the "Send" button */
-  var buttonTogglingHandler = this.toggleButton.bind(this);
+  // var buttonTogglingHandler = this.toggleButton.bind(this);
 
   // TODO make these not hard coded later
   // this.messageInput1.addEventListener('keyup', buttonTogglingHandler);
@@ -62,7 +62,6 @@ ClassChat.prototype.loadThreads = function() {
   var setThread = function(data) {
     var val = data.val();
     this.displayThread(data.key, val.title);
-
   }.bind(this);
   this.threadsRef.on('child_added', setThread);
   this.threadsRef.on('child_changed', setThread);
@@ -81,14 +80,14 @@ ClassChat.prototype.loadMessages = function() {
   /* Load the last 12 messages and listen for new ones */
   var setMessage1 = function(data) {
     var val = data.val();
-    this.displayMessage1(data.key, val.name, val.text, val.photoUrl);
+    this.displayMessage(data.key, val.name, val.text, val.photoUrl);
   }.bind(this);
   this.messagesRef1.on('child_added', setMessage1);
   this.messagesRef1.on('child_changed', setMessage1);
 };
 
 /** Saves a new message to the Firebase DB */
-ClassChat.prototype.saveMessage1 = function(e) {
+ClassChat.prototype.saveMessage = function(e) {
 
   /* By default, submits the form and refreshes the page - we don't want this! */
   e.preventDefault();
@@ -111,35 +110,6 @@ ClassChat.prototype.saveMessage1 = function(e) {
     }).then(function() {
       /* Clear message text field and SEND button state */
       ClassChat.resetMaterialTextfield(this.messageInput1);
-      this.toggleButton();
-    }.bind(this)).catch(function(error) {
-      console.error('Error writing new message to Firebase Database', error);
-    });
-  }
-};
-
-ClassChat.prototype.saveMessage2 = function(e) {
-
-  /* By default, submits the form and refreshes the page - we don't want this! */
-  e.preventDefault();
-
-  /* Check that the user entered a message and is signed in */
-  if (this.messageInput2.value && this.checkSignedInWithMessage()) {
-
-    /* Shortcut for current user */
-    var currentUser = this.auth.currentUser;
-
-
-
-    /* Add a new message entry to the Firebase Database */
-    // TODO - make sure we push to the right thread
-    this.threadsRef.child('thread_2_id').child('messages').push({
-      name: currentUser.displayName,
-      text: this.messageInput2.value,
-      photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
-    }).then(function() {
-      /* Clear message text field and SEND button state */
-      ClassChat.resetMaterialTextfield(this.messageInput2);
       this.toggleButton();
     }.bind(this)).catch(function(error) {
       console.error('Error writing new message to Firebase Database', error);
@@ -267,16 +237,73 @@ ClassChat.prototype.displayThread = function(key, title) {
     $thread_messages.attr('id', key + '/messages');
 
     var $thread_form = $question_thread.find('form');
-    $thread_form.attr('id', key + 'message-form');
+    $thread_form.attr('id', key + '/message-form');
 
     var $thread_form_input = $question_thread.find('input');
-    $thread_form_input.attr('id', key + 'message');
+    $thread_form_input.attr('id', key + '/message');
 
     var $thread_form_label = $question_thread.find('label');
-    $thread_form_label.attr('for', key + 'message');
+    $thread_form_label.attr('for', key + '/message');
 
     var $thread_button = $question_thread.find('button');
-    $thread_button.attr('id', key + 'submit');
+    $thread_button.attr('id', key + '/submit');
+
+    $thread_form_input.bind('keyup change', function() {
+      if ($thread_form_input.val() !== '') {
+        $thread_button.prop('disabled', false);
+      } else {
+        $thread_button.prop('disabled', true);
+      }
+    });
+
+    var checkSignedInWithMessage = function() {
+      /* Return true if the user is signed in Firebase */
+      if (firebase.auth().currentUser) {
+        return true;
+      }
+
+      /* Display a message to the user using a Snackbar */
+      var data = {
+        message: 'You must sign-in first',
+        timeout: 2000
+      };
+
+      // TODO move snackbar to the header insead
+      this.signInSnackbar.MaterialSnackbar.showSnackbar(data);
+      return false;
+    };
+
+    $thread_button.click(function(e) {
+      e.preventDefault();
+
+      console.log(title + ': ' + $thread_form_input.val());
+
+      if ($thread_form_input.val() !== '' && checkSignedInWithMessage()) {
+
+        /* Shortcut for current user */
+        var currentUser = firebase.auth().currentUser;
+
+
+
+        // /* Add a new message entry to the Firebase Database */
+        // // TODO - make sure we push to the right thread
+
+
+
+        // this.threadsRef.child(key).child('messages').push({
+        firebase.database().ref('threads').child(key).child('messages').push({
+          name: currentUser.displayName,
+          text: $thread_form_input.val(),
+          photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
+        }).then(function() {
+          /* Clear message text field and SEND button state */
+          ClassChat.resetMaterialTextfield($thread_form_input[0]);
+          // this.toggleButton();
+        }.bind(this)).catch(function(error) {
+          console.error('Error writing new message to Firebase Database', error);
+        });
+      }
+    });
 
     /* Material Design Lite needs to upgrade this element */
     var $thread_textfield = $question_thread.find('.mdl-textfield');
@@ -287,7 +314,7 @@ ClassChat.prototype.displayThread = function(key, title) {
 };
 
 /** Displays a Message in the UI */
-ClassChat.prototype.displayMessage1 = function(key, name, text, picUrl) {
+ClassChat.prototype.displayMessage = function(key, name, text, picUrl) {
   var div = document.getElementById(key);
   /* If an element for that message does not exists yet we create it */
   if (!div) {
@@ -314,12 +341,21 @@ ClassChat.prototype.displayMessage1 = function(key, name, text, picUrl) {
 };
 
 /** Enables or disables the submit button depending whether the text input field has content or not */
-ClassChat.prototype.toggleButton = function() {
-  if (this.messageInput1.value) {
-    this.submitButton1.removeAttribute('disabled');
+ClassChat.prototype.toggleButton = function($input, $button) {
+
+  if ($input.val()) {
+    console.log('enable');
+    $button.removeAttr('disabled');
   } else {
-    this.submitButton1.setAttribute('disabled', 'true');
+    $button.attr('disabled');
+    console.log('disable');
   }
+
+  // if (this.messageInput1.value) {
+  //   this.submitButton1.removeAttribute('disabled');
+  // } else {
+  //   this.submitButton1.setAttribute('disabled', 'true');
+  // }
 };
 
 /** Checks that the Firebase SDK has been correctly setup and configured */
