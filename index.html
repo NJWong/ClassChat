@@ -62,44 +62,85 @@
   </header>
 
   <main class="mdl-layout__content mdl-color--grey-100">
-    <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
+    <div id="question-threads-container">
 
-      <!-- Messages container -->
-      <div id="messages-card" class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Discuss quiz below...</h2>
-        </div>
-        <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-          <div id="messages">
-            <span id="message-filler"></span>
-          </div>
-          <form id="message-form" autocomplete="off" action="#">
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="text" id="message">
-              <label class="mdl-textfield__label" for="message">Message...</label>
-            </div>
-            <button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-              Send
-            </button>
-          </form>
-          <form id="image-form" action="#">
-            <input id="mediaCapture" type="file" accept="image/*,capture=camera">
-            <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--red-700 mdl-color-text--white">
-              <i class="material-icons">image</i>
-            </button>
-          </form>
-        </div>
-      </div>
 
-      <div class="mdl-tooltip mdl-tooltip--large" for="submitImage">
-        Upload image
-      </div>
 
-      <div id="must-signin-snackbar" class="mdl-js-snackbar mdl-snackbar">
-        <div class="mdl-snackbar__text"></div>
-        <button class="mdl-snackbar__action" type="button"></button>
-      </div>
+      <!-- Start Thread 1 -->
+      <!--<div id="thread_1_id" class="messages-card-container mdl-cell mdl-cell&#45;&#45;12-col mdl-grid">-->
+        <!--<div id="" class="messages-card mdl-card mdl-shadow&#45;&#45;2dp mdl-cell mdl-cell&#45;&#45;12-col">-->
+          <!--<div class="mdl-card__title">-->
+            <!--<h2 class="mdl-card__title-text">Discuss quiz below...</h2>-->
+          <!--</div>-->
+          <!--<div class="mdl-card__supporting-text mdl-color-text&#45;&#45;grey-600">-->
+            <!--<div id="thread_1_id/messages" class="messages">-->
+              <!--<span class="message-filler"></span>-->
+            <!--</div>-->
+            <!--<form id="thread_1_id/message-form" class="message-form" autocomplete="off" action="#">-->
+              <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
+                <!--<input id="thread_1_id/message" class="mdl-textfield__input" type="text">-->
+                <!--<label class="mdl-textfield__label" for="thread_1_id/message">Message...</label>-->
+              <!--</div>-->
+              <!--<button id="thread_1_id/submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect">-->
+                <!--Send-->
+              <!--</button>-->
+            <!--</form>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!-- End Thread 1 -->
 
+      <!-- Start Thread 2 -->
+      <!--<div id="messages-card-container" class="mdl-cell mdl-cell&#45;&#45;12-col mdl-grid">-->
+        <!--<div id="messages-card" class="mdl-card mdl-shadow&#45;&#45;2dp mdl-cell mdl-cell&#45;&#45;12-col">-->
+          <!--<div class="mdl-card__title">-->
+            <!--<h2 class="mdl-card__title-text">Discuss quiz below...</h2>-->
+          <!--</div>-->
+          <!--<div class="mdl-card__supporting-text mdl-color-text&#45;&#45;grey-600">-->
+            <!--<div id="messages">-->
+              <!--<span id="message-filler"></span>-->
+            <!--</div>-->
+            <!--<form id="message-form" autocomplete="off" action="#">-->
+              <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
+                <!--<input class="mdl-textfield__input" type="text" id="message">-->
+                <!--<label class="mdl-textfield__label" for="message">Message...</label>-->
+              <!--</div>-->
+              <!--<button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect">-->
+                <!--Send-->
+              <!--</button>-->
+            <!--</form>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!-- End Thread 2 -->
+
+
+      <!--<div class="messages-card-container mdl-cell mdl-cell&#45;&#45;12-col mdl-grid">-->
+        <!--<div class="messages-card mdl-card mdl-shadow&#45;&#45;2dp mdl-cell mdl-cell&#45;&#45;12-col">-->
+          <!--<div class="mdl-card__title">-->
+            <!--<h2 class="mdl-card__title-text">Discuss quiz below...</h2>-->
+          <!--</div>-->
+          <!--<div class="mdl-card__supporting-text mdl-color-text&#45;&#45;grey-600">-->
+            <!--<div class="messages">-->
+              <!--<span class="message-filler"></span>-->
+            <!--</div>-->
+            <!--<form class="message-form" autocomplete="off" action="#">-->
+              <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield&#45;&#45;floating-label">-->
+                <!--<input class="mdl-textfield__input" type="text">-->
+                <!--<label class="mdl-textfield__label">Message...</label>-->
+              <!--</div>-->
+              <!--<button disabled type="submit" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect">Send</button>-->
+            <!--</form>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+
+
+    </div>
+
+    <div id="must-signin-snackbar" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
     </div>
   </main>
 

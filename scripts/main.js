@@ -7,34 +7,33 @@ function ClassChat() {
   this.checkSetup();
 
   /* Shortcuts to DOM Elements */
-  this.messageList = document.getElementById('messages');
-  this.messageForm = document.getElementById('message-form');
-  this.messageInput = document.getElementById('message');
-  this.submitButton = document.getElementById('submit');
-  this.submitImageButton = document.getElementById('submitImage');
-  this.imageForm = document.getElementById('image-form');
-  this.mediaCapture = document.getElementById('mediaCapture');
+
+  // TODO make these not hard coded later
+  this.messageList1 = document.getElementById('thread_1_id/messages');
+  this.messageForm1 = document.getElementById('thread_1_id/message-form');
+  this.messageInput1 = document.getElementById('thread_1_id/message');
+  this.submitButton1 = document.getElementById('thread_1_id/submit');
+
   this.userPic = document.getElementById('user-pic');
   this.userName = document.getElementById('user-name');
   this.signInButton = document.getElementById('sign-in');
   this.signOutButton = document.getElementById('sign-out');
   this.signInSnackbar = document.getElementById('must-signin-snackbar');
+  this.questionThreadsContainer = document.getElementById('question-threads-container')
 
   /* Event listeners for saving a message, signing in, and signing out */
-  this.messageForm.addEventListener('submit', this.saveMessage.bind(this));
-  this.signOutButton.addEventListener('click', this.signOut.bind(this));
-  this.signInButton.addEventListener('click', this.signIn.bind(this));
+  // TODO make these not hard coded later
+  // this.messageForm1.addEventListener('submit', this.saveMessage1.bind(this));
+  //
+  // this.signOutButton.addEventListener('click', this.signOut.bind(this));
+  // this.signInButton.addEventListener('click', this.signIn.bind(this));
 
   /* Event listeners for toggling the "Send" button */
   var buttonTogglingHandler = this.toggleButton.bind(this);
-  this.messageInput.addEventListener('keyup', buttonTogglingHandler);
-  this.messageInput.addEventListener('change', buttonTogglingHandler);
 
-  /* Event listeners for uploading images */
-  this.submitImageButton.addEventListener('click', function() {
-    this.mediaCapture.click();
-  }.bind(this));
-  this.mediaCapture.addEventListener('change', this.saveImageMessage.bind(this));
+  // TODO make these not hard coded later
+  // this.messageInput1.addEventListener('keyup', buttonTogglingHandler);
+  // this.messageInput1.addEventListener('change', buttonTogglingHandler);
 
   /* Initialise a Firebase connection */
   this.initFirebase();
@@ -52,44 +51,66 @@ ClassChat.prototype.initFirebase = function() {
   this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));
 };
 
+ClassChat.prototype.loadThreads = function() {
+  /* Threads */
+  this.threadsRef = this.database.ref('threads');
+
+  /* Make sure we remove all previous listeners */
+  this.threadsRef.off();
+
+  /* Create a thread */
+  var setThread = function(data) {
+    var val = data.val();
+    this.displayThread(data.key, val.title);
+
+  }.bind(this);
+  this.threadsRef.on('child_added', setThread);
+  this.threadsRef.on('child_changed', setThread);
+};
+
 /** Loads chat messages history and listens for upcoming ones */
 ClassChat.prototype.loadMessages = function() {
 
   /* Reference to the /messages/ database path */
-  this.messagesRef = this.database.ref('messages');
+  // this.messagesRef = this.database.ref('messages');
+  this.messagesRef1 = this.database.ref('threads/thread_1_id/messages');
 
   /* Make sure we remove all previous listeners */
-  this.messagesRef.off();
+  this.messagesRef1.off();
 
   /* Load the last 12 messages and listen for new ones */
-  var setMessage = function(data) {
+  var setMessage1 = function(data) {
     var val = data.val();
-    this.displayMessage(data.key, val.name, val.text, val.photoUrl, val.imageUrl);
+    this.displayMessage1(data.key, val.name, val.text, val.photoUrl);
   }.bind(this);
-  this.messagesRef.on('child_added', setMessage);
-  this.messagesRef.on('child_changed', setMessage);
+  this.messagesRef1.on('child_added', setMessage1);
+  this.messagesRef1.on('child_changed', setMessage1);
 };
 
 /** Saves a new message to the Firebase DB */
-ClassChat.prototype.saveMessage = function(e) {
+ClassChat.prototype.saveMessage1 = function(e) {
 
   /* By default, submits the form and refreshes the page - we don't want this! */
   e.preventDefault();
 
   /* Check that the user entered a message and is signed in */
-  if (this.messageInput.value && this.checkSignedInWithMessage()) {
+  if (this.messageInput1.value && this.checkSignedInWithMessage()) {
 
     /* Shortcut for current user */
     var currentUser = this.auth.currentUser;
 
+
+
     /* Add a new message entry to the Firebase Database */
-    this.messagesRef.push({
+    // TODO - make sure we push to the right thread
+    // this.messagesRef.push({
+    this.threadsRef.child('thread_1_id').child('messages').push({
       name: currentUser.displayName,
-      text: this.messageInput.value,
+      text: this.messageInput1.value,
       photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
     }).then(function() {
       /* Clear message text field and SEND button state */
-      ClassChat.resetMaterialTextfield(this.messageInput);
+      ClassChat.resetMaterialTextfield(this.messageInput1);
       this.toggleButton();
     }.bind(this)).catch(function(error) {
       console.error('Error writing new message to Firebase Database', error);
@@ -97,64 +118,32 @@ ClassChat.prototype.saveMessage = function(e) {
   }
 };
 
-/** Sets the URL of the given img element with the URL of the image stored in Firebase Storage */
-ClassChat.prototype.setImageUrl = function(imageUri, imgElement) {
+ClassChat.prototype.saveMessage2 = function(e) {
 
-  /* If the image is a Firebase Storage URI we fetch the URL */
-  if (imageUri.startsWith('gs://')) {
-    imgElement.src = ClassChat.LOADING_IMAGE_URL; // Display a loading image first.
-    this.storage.refFromURL(imageUri).getMetadata().then(function(metadata) {
-      imgElement.src = metadata.downloadURLs[0];
-    });
-  } else {
-    imgElement.src = imageUri;
-  }
-};
+  /* By default, submits the form and refreshes the page - we don't want this! */
+  e.preventDefault();
 
-// TODO - probably don't need this functionality
-/** Saves a new message containing an image URI in Firebase - first saves the image in Firebase storage */
-ClassChat.prototype.saveImageMessage = function(event) {
+  /* Check that the user entered a message and is signed in */
+  if (this.messageInput2.value && this.checkSignedInWithMessage()) {
 
-  /* The image file that is to be uploaded */
-  var file = event.target.files[0];
-
-  /* Clear the selection in the file picker input */
-  this.imageForm.reset();
-
-  /* Check if the file is an image */
-  if (!file.type.match('image.*')) {
-    var data = {
-      message: 'You can only share images',
-      timeout: 2000
-    };
-    this.signInSnackbar.MaterialSnackbar.showSnackbar(data);
-    return;
-  }
-
-  /* Check if the user is signed in */
-  if (this.checkSignedInWithMessage()) {
-
-    /* We add a message with a loading icon that will get updated with the shared image */
+    /* Shortcut for current user */
     var currentUser = this.auth.currentUser;
-    this.messagesRef.push({
+
+
+
+    /* Add a new message entry to the Firebase Database */
+    // TODO - make sure we push to the right thread
+    this.threadsRef.child('thread_2_id').child('messages').push({
       name: currentUser.displayName,
-      imageUrl: ClassChat.LOADING_IMAGE_URL,
+      text: this.messageInput2.value,
       photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
-    }).then(function(data) {
-
-      // Upload the image to Firebase Storage.
-      var uploadTask = this.storage.ref(currentUser.uid + '/' + Date.now() + '/' + file.name)
-          .put(file, {'contentType': file.type});
-      // Listen for upload completion.
-      uploadTask.on('state_changed', null, function(error) {
-        console.error('There was an error uploading a file to Firebase Storage:', error);
-      }, function() {
-
-        // Get the file's Storage URI and update the chat message placeholder.
-        var filePath = uploadTask.snapshot.metadata.fullPath;
-        data.update({imageUrl: this.storage.ref(filePath).toString()});
-      }.bind(this));
-    }.bind(this));
+    }).then(function() {
+      /* Clear message text field and SEND button state */
+      ClassChat.resetMaterialTextfield(this.messageInput2);
+      this.toggleButton();
+    }.bind(this)).catch(function(error) {
+      console.error('Error writing new message to Firebase Database', error);
+    });
   }
 };
 
@@ -192,7 +181,10 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
     this.signInButton.setAttribute('hidden', 'true');
 
     /* We load currently existing chat messages */
-    this.loadMessages();
+    this.loadThreads();
+    // this.loadMessages();
+
+
   } else { // user is signed out
     /* Hide user's profile and sign-out button */
     this.userName.setAttribute('hidden', 'true');
@@ -222,7 +214,12 @@ ClassChat.prototype.checkSignedInWithMessage = function() {
 };
 
 /** Resets the given MaterialTextField */
-ClassChat.resetMaterialTextfield = function(element) {
+ClassChat.resetMaterialTextfield1 = function(element) {
+  element.value = '';
+  element.parentNode.MaterialTextfield.boundUpdateClassesHandler();
+};
+
+ClassChat.resetMaterialTextfield2 = function(element) {
   element.value = '';
   element.parentNode.MaterialTextfield.boundUpdateClassesHandler();
 };
@@ -235,11 +232,73 @@ ClassChat.MESSAGE_TEMPLATE =
       '<div class="name"></div>' +
     '</div>';
 
+/** HTML template for a question thread */
+ClassChat.QUESTION_THREAD =
+'<div class="messages-card-container mdl-cell mdl-cell--12-col mdl-grid">' +
+  '<div class="messages-card mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">' +
+    '<div class="mdl-card__title">' +
+      '<h2 class="mdl-card__title-text">Discuss quiz below...</h2>' +
+    '</div>' +
+    '<div class="mdl-card__supporting-text mdl-color-text--grey-600">' +
+      '<div class="messages">' +
+        '<span class="message-filler"></span>' +
+      '</div>' +
+      '<form class="message-form" autocomplete="off" action="#">' +
+        '<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">' +
+          '<input class="mdl-textfield__input" type="text">' +
+          '<label class="mdl-textfield__label">Message...</label>' +
+        '</div>' +
+        '<button disabled type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Send</button>' +
+      '</form>' +
+    '</div>' +
+  '</div>' +
+'</div>';
+
 /** A loading image URL */
 ClassChat.LOADING_IMAGE_URL = 'https://www.google.com/images/spin-32.gif';
 
+ClassChat.prototype.displayThread = function(key, title) {
+  var div = document.getElementById(key);
+
+  if (!div) {
+    var container = document.createElement('div');
+    container.innerHTML = ClassChat.QUESTION_THREAD;
+
+    var messages_card_container = container.firstChild;
+    messages_card_container.setAttribute('id', key);
+
+    var messages_card = messages_card_container.firstChild;
+
+    var thread_title_text = messages_card.firstChild.firstChild;
+    thread_title_text.innerHTML = title;
+
+    var thread_content = messages_card.childNodes[1];
+
+    var messages_section = thread_content.childNodes[0];
+    messages_section.setAttribute('id', key + '/messages');
+
+    var thread_form = thread_content.childNodes[1];
+    thread_form.setAttribute('id', key + '/message-form');
+
+    var form_textfield = thread_form.childNodes[0];
+    componentHandler.upgradeElement(form_textfield, 'MaterialTextfield');
+    // componentHandler.upgradeAllRegistered();
+
+    var form_input = form_textfield.childNodes[0];
+    form_input.setAttribute('id', key + '/message');
+
+    var form_label = form_textfield.childNodes[1];
+    form_label.setAttribute('for', key + '/message');
+
+    var form_button = thread_form.childNodes[1];
+    form_button.setAttribute('id', key + '/submit');
+
+    this.questionThreadsContainer.appendChild(container);
+  }
+};
+
 /** Displays a Message in the UI */
-ClassChat.prototype.displayMessage = function(key, name, text, picUrl, imageUri) {
+ClassChat.prototype.displayMessage1 = function(key, name, text, picUrl) {
   var div = document.getElementById(key);
   /* If an element for that message does not exists yet we create it */
   if (!div) {
@@ -247,7 +306,7 @@ ClassChat.prototype.displayMessage = function(key, name, text, picUrl, imageUri)
     container.innerHTML = ClassChat.MESSAGE_TEMPLATE;
     div = container.firstChild;
     div.setAttribute('id', key);
-    this.messageList.appendChild(div);
+    this.messageList1.appendChild(div);
   }
   if (picUrl) {
     div.querySelector('.pic').style.backgroundImage = 'url(' + picUrl + ')';
@@ -258,27 +317,19 @@ ClassChat.prototype.displayMessage = function(key, name, text, picUrl, imageUri)
     messageElement.textContent = text;
     // Replace all line breaks by <br>.
     messageElement.innerHTML = messageElement.innerHTML.replace(/\n/g, '<br>');
-  } else if (imageUri) { // If the message is an image.
-    var image = document.createElement('img');
-    image.addEventListener('load', function() {
-      this.messageList.scrollTop = this.messageList.scrollHeight;
-    }.bind(this));
-    this.setImageUrl(imageUri, image);
-    messageElement.innerHTML = '';
-    messageElement.appendChild(image);
   }
   // Show the card fading-in.
   setTimeout(function() {div.classList.add('visible')}, 1);
-  this.messageList.scrollTop = this.messageList.scrollHeight;
-  this.messageInput.focus();
+  this.messageList1.scrollTop = this.messageList1.scrollHeight;
+  this.messageInput1.focus();
 };
 
 /** Enables or disables the submit button depending whether the text input field has content or not */
 ClassChat.prototype.toggleButton = function() {
-  if (this.messageInput.value) {
-    this.submitButton.removeAttribute('disabled');
+  if (this.messageInput1.value) {
+    this.submitButton1.removeAttribute('disabled');
   } else {
-    this.submitButton.setAttribute('disabled', 'true');
+    this.submitButton1.setAttribute('disabled', 'true');
   }
 };
 

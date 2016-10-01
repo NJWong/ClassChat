@@ -1,15 +1,15 @@
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
-main, #messages-card {
+main, .messages-card {
   height: 100%;
   padding-bottom: 0;
 }
-#messages-card-container {
+.messages-card-container {
   height: calc(100% - 40px);
   padding-bottom: 0;
 }
-#messages-card {
+.messages-card {
   margin-top: 15px;
 }
 .mdl-layout__header-row span {
@@ -47,7 +47,7 @@ main, #messages-card {
   height: 100%;
   padding-top: 0;
 }
-#messages {
+.messages {
   overflow-y: auto;
   margin-bottom: 10px;
   height: calc(100% - 60px);
@@ -55,7 +55,7 @@ main, #messages-card {
   flex-direction: column;
   display: flex;
 }
-#message-filler {
+.message-filler {
   flex-grow: 1;
 }
 .message-container:first-of-type {
@@ -98,10 +98,10 @@ main, #messages-card {
   font-size: 12px;
   box-sizing: border-box;
 }
-#message-form {
+.message-form {
   display: flex;
   flex-direction: row;
-  width: calc(100% - 48px);
+  width: 100%;
   float: left;
 }
 #image-form {
@@ -110,10 +110,10 @@ main, #messages-card {
   width: 48px;
   float: right;
 }
-#message-form .mdl-textfield {
+.message-form .mdl-textfield {
   width: calc(100% - 100px);
 }
-#message-form button, #image-form button {
+.message-form button, #image-form button {
   width: 100px;
   margin: 15px 0 0 10px;
 }
