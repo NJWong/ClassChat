@@ -44,28 +44,24 @@ ClassChat.prototype.loadThreads = function() {
   var setThread = function(data) {
     var val = data.val();
     this.displayThread(data.key, val.title);
+    this.loadMessages(data.key);
   }.bind(this);
   this.threadsRef.on('child_added', setThread);
   this.threadsRef.on('child_changed', setThread);
 };
 
 /** Loads chat messages history and listens for upcoming ones */
-ClassChat.prototype.loadMessages = function() {
+ClassChat.prototype.loadMessages = function(thread_id) {
 
-  /* Reference to the /messages/ database path */
-  // this.messagesRef = this.database.ref('messages');
-  this.messagesRef1 = this.database.ref('threads/thread_1_id/messages');
+  var messagesRef = this.database.ref('threads/' + thread_id + '/messages');
+  messagesRef.off();
 
-  /* Make sure we remove all previous listeners */
-  this.messagesRef1.off();
-
-  /* Load the last 12 messages and listen for new ones */
-  var setMessage1 = function(data) {
+  var setMessage = function(data) {
     var val = data.val();
-    this.displayMessage(data.key, val.name, val.text, val.photoUrl);
+    this.displayMessage(thread_id, data.key, val.name, val.text, val.photoUrl);
   }.bind(this);
-  this.messagesRef1.on('child_added', setMessage1);
-  this.messagesRef1.on('child_changed', setMessage1);
+  messagesRef.on('child_added', setMessage);
+  messagesRef.on('child_changed', setMessage);
 };
 
 /** Saves a new message to the Firebase DB */
@@ -120,6 +116,8 @@ ClassChat.prototype.signOut = function() {
 ClassChat.prototype.onAuthStateChanged = function(user) {
 
   if (user) { // User is signed in
+    $('#loading').fadeIn(200);
+
     /* Get profile pic and user's name from the Firebase user object */
     var profilePicUrl = user.photoURL;
     var userName = user.displayName;
@@ -138,8 +136,6 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
 
     /* We load currently existing chat messages */
     this.loadThreads();
-    // this.loadMessages();
-
 
   } else { // user is signed out
     /* Hide user's profile and sign-out button */
@@ -253,19 +249,24 @@ ClassChat.prototype.displayThread = function(key, title) {
     componentHandler.upgradeElement($thread_textfield[0], 'MaterialTextfield');
 
     $question_thread.appendTo('#question-threads-container');
+    $('#loading').fadeOut(500);
+    $question_thread.animate({opacity: 1}, 1000);
   }
 };
 
 /** Displays a Message in the UI */
-ClassChat.prototype.displayMessage = function(key, name, text, picUrl) {
+ClassChat.prototype.displayMessage = function(thread_id, key, name, text, picUrl) {
+
   var div = document.getElementById(key);
+  var messageList = document.getElementById(thread_id + '/messages');
+
   /* If an element for that message does not exists yet we create it */
   if (!div) {
     var container = document.createElement('div');
     container.innerHTML = ClassChat.MESSAGE_TEMPLATE;
     div = container.firstChild;
     div.setAttribute('id', key);
-    this.messageList1.appendChild(div);
+    messageList.appendChild(div);
   }
   if (picUrl) {
     div.querySelector('.pic').style.backgroundImage = 'url(' + picUrl + ')';
@@ -279,8 +280,8 @@ ClassChat.prototype.displayMessage = function(key, name, text, picUrl) {
   }
   // Show the card fading-in.
   setTimeout(function() {div.classList.add('visible')}, 1);
-  this.messageList1.scrollTop = this.messageList1.scrollHeight;
-  this.messageInput1.focus();
+  messageList.scrollTop = messageList.scrollHeight;
+  // messageInput.focus();
 };
 
 /** Checks that the Firebase SDK has been correctly setup and configured */
