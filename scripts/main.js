@@ -92,29 +92,58 @@ ClassChat.prototype.saveMessage = function(e) {
   /* By default, submits the form and refreshes the page - we don't want this! */
   e.preventDefault();
 
-  /* Check that the user entered a message and is signed in */
-  if (this.messageInput1.value && this.checkSignedInWithMessage()) {
+  var thread_id = e.data.key;
+  // Not using jQuery here because the forward slash is not allowed in the selector
+  var $message_input = $(document.getElementById(thread_id + '/message'));
+  var $submit_button = $(document.getElementById(thread_id + '/submit'));
+
+  // console.log(message_input);
+
+  if ($message_input.val() !== '' && this.checkSignedInWithMessage()) {
 
     /* Shortcut for current user */
     var currentUser = this.auth.currentUser;
 
+    console.log(thread_id + ': ' + $message_input.val());
 
-
-    /* Add a new message entry to the Firebase Database */
-    // TODO - make sure we push to the right thread
-    // this.messagesRef.push({
-    this.threadsRef.child('thread_1_id').child('messages').push({
+    this.threadsRef.child(thread_id).child('messages').push({
+    // this.database.ref('threads').child(thread_id).child('messages').push({
       name: currentUser.displayName,
-      text: this.messageInput1.value,
+      text: $message_input.val(),
       photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
     }).then(function() {
       /* Clear message text field and SEND button state */
-      ClassChat.resetMaterialTextfield(this.messageInput1);
-      this.toggleButton();
+      ClassChat.resetMaterialTextfield($message_input[0]);
+      $submit_button.prop('disabled', true);
+
     }.bind(this)).catch(function(error) {
       console.error('Error writing new message to Firebase Database', error);
     });
   }
+
+  /* Check that the user entered a message and is signed in */
+  // if (this.messageInput1.value && this.checkSignedInWithMessage()) {
+  //
+  //   /* Shortcut for current user */
+  //   var currentUser = this.auth.currentUser;
+
+
+
+    // /* Add a new message entry to the Firebase Database */
+    // // TODO - make sure we push to the right thread
+    // // this.messagesRef.push({
+    // this.threadsRef.child('thread_1_id').child('messages').push({
+    //   name: currentUser.displayName,
+    //   text: this.messageInput1.value,
+    //   photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
+    // }).then(function() {
+    //   /* Clear message text field and SEND button state */
+    //   ClassChat.resetMaterialTextfield(this.messageInput1);
+    //   this.toggleButton();
+    // }.bind(this)).catch(function(error) {
+    //   console.error('Error writing new message to Firebase Database', error);
+    // });
+  // }
 };
 
 /** Signs in the user using Google OAuth */
@@ -248,11 +277,15 @@ ClassChat.prototype.displayThread = function(key, title) {
     var $thread_button = $question_thread.find('button');
     $thread_button.attr('id', key + '/submit');
 
-    $thread_form_input.bind('keyup change', function() {
-      if ($thread_form_input.val() !== '') {
-        $thread_button.prop('disabled', false);
+    $thread_form_input.bind('keyup change', {param1: $thread_form_input, param2: $thread_button}, function(e) {
+
+      var $input = e.data.param1;
+      var $button = e.data.param2;
+
+      if ($input.val() !== '') {
+        $button.prop('disabled', false);
       } else {
-        $thread_button.prop('disabled', true);
+        $button.prop('disabled', true);
       }
     });
 
@@ -273,37 +306,7 @@ ClassChat.prototype.displayThread = function(key, title) {
       return false;
     };
 
-    $thread_button.click(function(e) {
-      e.preventDefault();
-
-      console.log(title + ': ' + $thread_form_input.val());
-
-      if ($thread_form_input.val() !== '' && checkSignedInWithMessage()) {
-
-        /* Shortcut for current user */
-        var currentUser = firebase.auth().currentUser;
-
-
-
-        // /* Add a new message entry to the Firebase Database */
-        // // TODO - make sure we push to the right thread
-
-
-
-        // this.threadsRef.child(key).child('messages').push({
-        firebase.database().ref('threads').child(key).child('messages').push({
-          name: currentUser.displayName,
-          text: $thread_form_input.val(),
-          photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
-        }).then(function() {
-          /* Clear message text field and SEND button state */
-          ClassChat.resetMaterialTextfield($thread_form_input[0]);
-          // this.toggleButton();
-        }.bind(this)).catch(function(error) {
-          console.error('Error writing new message to Firebase Database', error);
-        });
-      }
-    });
+    $thread_button.click({key: key}, this.saveMessage.bind(this));
 
     /* Material Design Lite needs to upgrade this element */
     var $thread_textfield = $question_thread.find('.mdl-textfield');
@@ -341,15 +344,25 @@ ClassChat.prototype.displayMessage = function(key, name, text, picUrl) {
 };
 
 /** Enables or disables the submit button depending whether the text input field has content or not */
-ClassChat.prototype.toggleButton = function($input, $button) {
+// TODO remove this - not used
+ClassChat.prototype.toggleButton = function(e) {
 
-  if ($input.val()) {
-    console.log('enable');
-    $button.removeAttr('disabled');
+  var $thread_form_input = e.data.param1;
+  var $thread_button = e.data.param2;
+
+  if ($thread_form_input.val() !== '') {
+    $thread_button.prop('disabled', false);
   } else {
-    $button.attr('disabled');
-    console.log('disable');
+    $thread_button.prop('disabled', true);
   }
+
+  // if ($input.val()) {
+  //   console.log('enable');
+  //   $button.removeAttr('disabled');
+  // } else {
+  //   $button.attr('disabled');
+  //   console.log('disable');
+  // }
 
   // if (this.messageInput1.value) {
   //   this.submitButton1.removeAttribute('disabled');
