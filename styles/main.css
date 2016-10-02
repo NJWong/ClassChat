@@ -257,6 +257,8 @@ main, .messages-card {
 #sign-in-message {
   text-align: center;
   color: #757575;
+  position: relative;
+  top: 25%;
 }
 
 #sign-in {
