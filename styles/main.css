@@ -218,6 +218,8 @@ main, .messages-card {
   margin-top: 40px;
   justify-content: center;
   padding: 16px;
+  /*opacity: 0;*/
+  display: none;
 }
 
 .mdl-mini-footer a img {
@@ -262,10 +264,10 @@ main, .messages-card {
 }
 
 .messages-card {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.05s linear;
 }
 
 .messages-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.005);
   border-radius: 4px;
 }

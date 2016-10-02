@@ -34,6 +34,7 @@ ClassChat.prototype.initFirebase = function() {
 };
 
 ClassChat.prototype.loadThreads = function() {
+
   /* Threads */
   this.threadsRef = this.database.ref('threads');
 
@@ -45,6 +46,8 @@ ClassChat.prototype.loadThreads = function() {
     var val = data.val();
     this.displayThread(data.key, val.title);
     this.loadMessages(data.key);
+    $('.mdl-mini-footer').fadeIn(500);
+    $('.mdl-mini-footer').css('display', 'flex');
   }.bind(this);
   this.threadsRef.on('child_added', setThread);
   this.threadsRef.on('child_changed', setThread);
@@ -83,7 +86,7 @@ ClassChat.prototype.saveMessage = function(e) {
 
     this.threadsRef.child(thread_id).child('messages').push({
     // this.database.ref('threads').child(thread_id).child('messages').push({
-      name: currentUser.displayName,
+      name: currentUser.displayName.split(" ")[0], // get first name
       text: $message_input.val(),
       photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
     }).then(function() {
@@ -152,6 +155,7 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
 
     /* Show sign-in button */
     this.signInButton.removeAttribute('hidden');
+    $('.mdl-mini-footer').fadeOut(500);
 
     $('#question-threads-container').fadeOut(500, function() {
       $('#sign-in-message').fadeIn(200);
@@ -259,6 +263,8 @@ ClassChat.prototype.displayThread = function(key, title) {
       }
 
     });
+
+    var container = $('#question-threads-container');
 
     /* Only enable the submit button when the input field is non-empty */
     $thread_form_input.bind('keyup change', {param1: $thread_form_input, param2: $thread_button}, function(e) {
