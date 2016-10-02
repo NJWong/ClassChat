@@ -7,33 +7,15 @@ function ClassChat() {
   this.checkSetup();
 
   /* Shortcuts to DOM Elements */
-
-  // TODO make these not hard coded later
-  this.messageList1 = document.getElementById('thread_1_id/messages');
-  this.messageForm1 = document.getElementById('thread_1_id/message-form');
-  this.messageInput1 = document.getElementById('thread_1_id/message');
-  this.submitButton1 = document.getElementById('thread_1_id/submit');
-
   this.userPic = document.getElementById('user-pic');
   this.userName = document.getElementById('user-name');
   this.signInButton = document.getElementById('sign-in');
   this.signOutButton = document.getElementById('sign-out');
   this.signInSnackbar = document.getElementById('must-signin-snackbar');
-  this.questionThreadsContainer = document.getElementById('question-threads-container')
 
-  /* Event listeners for saving a message, signing in, and signing out */
-  // TODO make these not hard coded later
-  // this.messageForm1.addEventListener('submit', this.saveMessage1.bind(this));
-
+  /* Event handlers for the sign in/out buttons */
   this.signOutButton.addEventListener('click', this.signOut.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
-
-  /* Event listeners for toggling the "Send" button */
-  // var buttonTogglingHandler = this.toggleButton.bind(this);
-
-  // TODO make these not hard coded later
-  // this.messageInput1.addEventListener('keyup', buttonTogglingHandler);
-  // this.messageInput1.addEventListener('change', buttonTogglingHandler);
 
   /* Initialise a Firebase connection */
   this.initFirebase();
@@ -89,7 +71,7 @@ ClassChat.prototype.loadMessages = function() {
 /** Saves a new message to the Firebase DB */
 ClassChat.prototype.saveMessage = function(e) {
 
-  /* By default, submits the form and refreshes the page - we don't want this! */
+  /* By default, clicking a submit button refreshes the page - we don't want this! */
   e.preventDefault();
 
   var thread_id = e.data.key;
@@ -97,8 +79,7 @@ ClassChat.prototype.saveMessage = function(e) {
   var $message_input = $(document.getElementById(thread_id + '/message'));
   var $submit_button = $(document.getElementById(thread_id + '/submit'));
 
-  // console.log(message_input);
-
+  /* Check that the user entered a message and is signed in */
   if ($message_input.val() !== '' && this.checkSignedInWithMessage()) {
 
     /* Shortcut for current user */
@@ -120,30 +101,6 @@ ClassChat.prototype.saveMessage = function(e) {
       console.error('Error writing new message to Firebase Database', error);
     });
   }
-
-  /* Check that the user entered a message and is signed in */
-  // if (this.messageInput1.value && this.checkSignedInWithMessage()) {
-  //
-  //   /* Shortcut for current user */
-  //   var currentUser = this.auth.currentUser;
-
-
-
-    // /* Add a new message entry to the Firebase Database */
-    // // TODO - make sure we push to the right thread
-    // // this.messagesRef.push({
-    // this.threadsRef.child('thread_1_id').child('messages').push({
-    //   name: currentUser.displayName,
-    //   text: this.messageInput1.value,
-    //   photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
-    // }).then(function() {
-    //   /* Clear message text field and SEND button state */
-    //   ClassChat.resetMaterialTextfield(this.messageInput1);
-    //   this.toggleButton();
-    // }.bind(this)).catch(function(error) {
-    //   console.error('Error writing new message to Firebase Database', error);
-    // });
-  // }
 };
 
 /** Signs in the user using Google OAuth */
@@ -255,7 +212,6 @@ ClassChat.prototype.displayThread = function(key, title) {
   var div = document.getElementById(key);
 
   if (!div) {
-
     var $question_thread = $($.parseHTML(ClassChat.QUESTION_THREAD));
     $question_thread.attr('id', key);
 
@@ -277,6 +233,7 @@ ClassChat.prototype.displayThread = function(key, title) {
     var $thread_button = $question_thread.find('button');
     $thread_button.attr('id', key + '/submit');
 
+    /* Only enable the submit button when the input field is non-empty */
     $thread_form_input.bind('keyup change', {param1: $thread_form_input, param2: $thread_button}, function(e) {
 
       var $input = e.data.param1;
@@ -288,23 +245,6 @@ ClassChat.prototype.displayThread = function(key, title) {
         $button.prop('disabled', true);
       }
     });
-
-    var checkSignedInWithMessage = function() {
-      /* Return true if the user is signed in Firebase */
-      if (firebase.auth().currentUser) {
-        return true;
-      }
-
-      /* Display a message to the user using a Snackbar */
-      var data = {
-        message: 'You must sign-in first',
-        timeout: 2000
-      };
-
-      // TODO move snackbar to the header insead
-      this.signInSnackbar.MaterialSnackbar.showSnackbar(data);
-      return false;
-    };
 
     $thread_button.click({key: key}, this.saveMessage.bind(this));
 
@@ -341,34 +281,6 @@ ClassChat.prototype.displayMessage = function(key, name, text, picUrl) {
   setTimeout(function() {div.classList.add('visible')}, 1);
   this.messageList1.scrollTop = this.messageList1.scrollHeight;
   this.messageInput1.focus();
-};
-
-/** Enables or disables the submit button depending whether the text input field has content or not */
-// TODO remove this - not used
-ClassChat.prototype.toggleButton = function(e) {
-
-  var $thread_form_input = e.data.param1;
-  var $thread_button = e.data.param2;
-
-  if ($thread_form_input.val() !== '') {
-    $thread_button.prop('disabled', false);
-  } else {
-    $thread_button.prop('disabled', true);
-  }
-
-  // if ($input.val()) {
-  //   console.log('enable');
-  //   $button.removeAttr('disabled');
-  // } else {
-  //   $button.attr('disabled');
-  //   console.log('disable');
-  // }
-
-  // if (this.messageInput1.value) {
-  //   this.submitButton1.removeAttribute('disabled');
-  // } else {
-  //   this.submitButton1.setAttribute('disabled', 'true');
-  // }
 };
 
 /** Checks that the Firebase SDK has been correctly setup and configured */
