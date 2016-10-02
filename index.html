@@ -30,7 +30,7 @@
   <link rel="icon" href="images/icon.png">
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">\
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <!-- Material Design Lite -->
   <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.grey-red.min.css" />
@@ -51,7 +51,7 @@
     <header class="mdl-layout__header mdl-color-text--white mdl-color--red-700">
       <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
         <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-          <h3><i class="material-icons">chat_bubble_outline</i> Class Chat - FIT3083</h3>
+          <h4><i class="material-icons">chat_bubble_outline</i> Class Chat - FIT3083</h4>
         </div>
         <div id="user-container">
           <div hidden id="user-pic"></div>
@@ -67,9 +67,15 @@
     </header>
 
     <main class="mdl-layout__content mdl-color--grey-100">
+
+      <div id="sign-in-message" class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
+        <h4>Welcome to ClassChat! Please sign-in using your student account.</h4>
+      </div>
+
+
       <div id="question-threads-container">
         <!-- Question threads go here -->
-        <div id="loading" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+        <!--<div id="loading" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>-->
 
       </div>
 
@@ -78,14 +84,16 @@
         <!--<button class="mdl-snackbar__action" type="button"></button>-->
       <!--</div>-->
 
+      <footer class="mdl-mini-footer">
+        <ul class="mdl-mini-footer__link-list">
+          <li><a href="https://github.com/NJWong/ClassChat" target="_blank" rel="noopener noreferrer"><img src="images/github_white_24.svg"/>View project on GitHub</a></li>
+        </ul>
+      </footer>
+
 
     </main>
 
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
-        <li><a href="https://github.com/NJWong/ClassChat" target="_blank" rel="noopener noreferrer"><img src="images/github_white_24.svg"/>View project on GitHub</a></li>
-      </ul>
-    </footer>
+
   </div>
 
   <!-- Firebase -->

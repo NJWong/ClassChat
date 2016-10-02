@@ -81,8 +81,6 @@ ClassChat.prototype.saveMessage = function(e) {
     /* Shortcut for current user */
     var currentUser = this.auth.currentUser;
 
-    console.log(thread_id + ': ' + $message_input.val());
-
     this.threadsRef.child(thread_id).child('messages').push({
     // this.database.ref('threads').child(thread_id).child('messages').push({
       name: currentUser.displayName,
@@ -133,6 +131,15 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
 
     /* Hide sign-in button */
     this.signInButton.setAttribute('hidden', 'true');
+    $('#sign-in-message').fadeOut(500, function() {
+      /* Show the question threads */
+      $('#question-threads-container').fadeIn(200);
+    });
+
+    /* Show new thread link if the user is an Admin */
+    if (this.auth.currentUser.uid === 'dXETuP9dLiZDirHTyJv9ldu9hrE3') {
+      console.log("TODO - admin button");
+    }
 
     /* We load currently existing chat messages */
     this.loadThreads();
@@ -145,6 +152,10 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
 
     /* Show sign-in button */
     this.signInButton.removeAttribute('hidden');
+
+    $('#question-threads-container').fadeOut(500, function() {
+      $('#sign-in-message').fadeIn(200);
+    });
   }
 };
 
@@ -182,8 +193,8 @@ ClassChat.MESSAGE_TEMPLATE =
 /** HTML template for a question thread */
 ClassChat.QUESTION_THREAD =
 '<div class="messages-card-container mdl-cell mdl-cell--12-col mdl-grid">' +
-  '<div class="messages-card mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">' +
-    '<div class="mdl-card__title">' +
+  '<div class="messages-card mdl-card mdl-shadow--8dp mdl-cell mdl-cell--12-col">' +
+    '<div class="mdl-card__title closed">' +
       '<h2 class="mdl-card__title-text">Discuss quiz below...</h2>' +
     '</div>' +
     '<div class="mdl-card__supporting-text mdl-color-text--grey-600">' +
@@ -228,6 +239,26 @@ ClassChat.prototype.displayThread = function(key, title) {
 
     var $thread_button = $question_thread.find('button');
     $thread_button.attr('id', key + '/submit');
+
+    /* Collapsible animations */
+    var $thread_title = $question_thread.find('.mdl-card__title');
+    var $thread_body = $question_thread.find('.mdl-card__supporting-text');
+
+    $thread_title.click(function(e) {
+      if ($thread_title.hasClass('open')) {
+        $thread_title.removeClass('open');
+        $thread_body.animate({height: 0, paddingBottom: 0}, 500, function() {
+          $thread_title.addClass('closed');
+        });
+      }
+      else if ($thread_title.hasClass('closed')) {
+        $thread_title.removeClass('closed');
+        $thread_body.animate({height: 400, paddingBottom: 16}, 500, function () {
+          $thread_title.addClass('open');
+        });
+      }
+
+    });
 
     /* Only enable the submit button when the input field is non-empty */
     $thread_form_input.bind('keyup change', {param1: $thread_form_input, param2: $thread_button}, function(e) {

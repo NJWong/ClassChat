@@ -1,69 +1,28 @@
 {
   "threads" : {
     "thread_1_id" : {
-      "title" : "Week 10 Question 1",
-      "messages" : {
-        "message_1_id" : {
-          "name" : "Nick",
-          "text" : "Test message question 1"
-        },
-        "message_2_id" : {
-          "name" : "Stephen",
-          "text" : "Another test message"
-        }
-      }
+      "title" : "Week 10 Question 1"
     },
     "thread_2_id" : {
-      "title" : "Week 10 Question 2",
-      "messages" : {
-        "message_1_id" : {
-          "name" : "Tom",
-          "text" : "Test message question 2"
-        },
-        "message_2_id" : {
-          "name" : "Robert",
-          "text" : "Another test message for question 2"
-        }
-      }
+      "title" : "Week 10 Question 2"
     },
     "thread_3_id" : {
-      "title" : "Week 10 Question 3",
-      "messages" : {
-        "message_1_id" : {
-          "name" : "Sam",
-          "text" : "Test message question 3"
-        },
-        "message_2_id" : {
-          "name" : "Max",
-          "text" : "Another test message for question 3"
-        }
-      }
+      "title" : "Week 10 Question 3"
     },
     "thread_4_id" : {
-      "title" : "Week 10 Question 4",
-      "messages" : {
-        "message_1_id" : {
-          "name" : "Dash",
-          "text" : "Test message question 4"
-        },
-        "message_2_id" : {
-          "name" : "Arvin",
-          "text" : "Another test message for question 4"
-        }
-      }
+      "title" : "Week 10 Question 4"
     },
     "thread_5_id" : {
-      "title" : "Week 10 Question 5",
-      "messages" : {
-        "message_1_id" : {
-          "name" : "Stef",
-          "text" : "Test message question 5"
-        },
-        "message_2_id" : {
-          "name" : "Des",
-          "text" : "Another test message for question 5"
-        }
-      }
+      "title" : "Week 10 Question 5"
+    },
+    "thread_6_id" : {
+      "title" : "Week 10 Question 6"
+    },
+    "thread_7_id" : {
+      "title" : "Week 10 Question 7"
+    },
+    "thread_8_id" : {
+      "title" : "Week 10 Question 8"
     }
   }
 }
