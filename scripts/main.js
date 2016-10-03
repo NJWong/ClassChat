@@ -90,7 +90,8 @@ ClassChat.prototype.saveMessage = function(e) {
     // this.database.ref('threads').child(thread_id).child('messages').push({
       name: currentUser.displayName.split(" ")[0], // get first name
       text: $message_input.val(),
-      photoUrl: currentUser.photoURL || '/images/profile_placeholder.png'
+      photoUrl: currentUser.photoURL || '/images/profile_placeholder.png',
+      uid: currentUser.uid
     }).then(function() {
       /* Clear message text field and SEND button state */
       ClassChat.resetMaterialTextfield($message_input[0]);
