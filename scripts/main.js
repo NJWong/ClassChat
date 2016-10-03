@@ -43,11 +43,12 @@ ClassChat.prototype.loadThreads = function() {
 
   /* Create a thread */
   var setThread = function(data) {
+    var mdl_footer = $('.mdl-mini-footer');
     var val = data.val();
     this.displayThread(data.key, val.title);
     this.loadMessages(data.key);
-    $('.mdl-mini-footer').fadeIn(500);
-    $('.mdl-mini-footer').css('display', 'flex');
+    mdl_footer.fadeIn(500);
+    mdl_footer.css('display', 'flex');
   }.bind(this);
   this.threadsRef.on('child_added', setThread);
   this.threadsRef.on('child_changed', setThread);
@@ -84,6 +85,7 @@ ClassChat.prototype.saveMessage = function(e) {
     /* Shortcut for current user */
     var currentUser = this.auth.currentUser;
 
+    /* Make sure to bind this to 'this' for the reference point */
     this.threadsRef.child(thread_id).child('messages').push({
     // this.database.ref('threads').child(thread_id).child('messages').push({
       name: currentUser.displayName.split(" ")[0], // get first name
@@ -93,7 +95,6 @@ ClassChat.prototype.saveMessage = function(e) {
       /* Clear message text field and SEND button state */
       ClassChat.resetMaterialTextfield($message_input[0]);
       $submit_button.prop('disabled', true);
-
     }.bind(this)).catch(function(error) {
       console.error('Error writing new message to Firebase Database', error);
     });

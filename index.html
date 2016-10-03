@@ -48,10 +48,10 @@
   <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <!-- Header section containing logo -->
 
-    <header class="mdl-layout__header mdl-color-text--white mdl-color--red-700">
+    <header id="class-chat-header" class="mdl-layout__header mdl-color-text--white mdl-color--red-700">
       <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
         <div class="mdl-layout__header-row mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-desktop">
-          <h4><i class="material-icons">chat_bubble_outline</i> Class Chat - FIT3083</h4>
+          <h4 id="class-chat-title"><i class="material-icons">chat_bubble_outline</i> Class Chat - FIT3083</h4>
         </div>
         <div id="user-container">
           <div hidden id="user-pic"></div>
@@ -65,6 +65,15 @@
         </div>
       </div>
     </header>
+
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Week List</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Week 10</a>
+        <a class="mdl-navigation__link" href="#">Week 11</a>
+        <a class="mdl-navigation__link" href="#">Week 12</a>
+      </nav>
+    </div>
 
     <main class="mdl-layout__content mdl-color--grey-100">
 

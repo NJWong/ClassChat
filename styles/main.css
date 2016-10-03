@@ -273,3 +273,17 @@ main, .messages-card {
   transform: scale(1.005);
   border-radius: 4px;
 }
+
+#class-chat-header {
+  min-height: 56px;
+}
+
+#class-chat-header .mdl-layout__drawer-button {
+  line-height: 50px;
+  margin: 0 5px;
+  top: 3px;
+}
+
+#class-chat-title {
+  margin-left: 40px;
+}
