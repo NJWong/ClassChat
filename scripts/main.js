@@ -148,6 +148,8 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
     /* We load currently existing chat messages */
     this.loadThreads();
 
+    console.log(this._sessionRef);
+
   } else { // user is signed out
     /* Hide user's profile and sign-out button */
     this.userName.setAttribute('hidden', 'true');
