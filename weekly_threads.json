@@ -1,0 +1,1014 @@
+{
+    "weeks" : {
+        "week_10_id" : {
+            "threads" : {
+                "thread_1_id" : {
+                  "messages" : {
+                    "-KT4xGGfsHuKA1u0HUPw" : {
+                      "name" : "Anonymous",
+                      "text" : "Discuss Q1 here..."
+                    },
+                    "-KT9MnA9kvgsqvtEt1nS" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Cool"
+                    },
+                    "-KT9NosNuT7gSpmwxvCj" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Awesome threads"
+                    },
+                    "-KT9nZYCkBSVGi67N328" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Thanks!"
+                    },
+                    "-KTBoObZ6m8QS5QnoXiC" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Hello everyone!",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTBoQOUctVZtAGzl9at" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Good morning all!",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBoROcltURiCk1ccsX" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Hi Jimmy!",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    },
+                    "-KTBoSBIfnvvMQ8GUsAl" : {
+                      "name" : "Yaik",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Sup",
+                      "uid" : "QCdvN4FVgJaZsKoAcDTo7T2sBF83"
+                    },
+                    "-KTBoSnx_2XeP1byeaGC" : {
+                      "name" : "Kwan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "hi",
+                      "uid" : "uQMxIFdyrFgcUbadQdWm6bGp2In2"
+                    },
+                    "-KTBp7OPZ5wEhAwzDJR0" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "call it banana",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTBp7YM_nHXsJfS2m_4" : {
+                      "name" : "James",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-RYtEoRbGWds/AAAAAAAAAAI/AAAAAAAAAAA/eR122jixbPM/photo.jpg",
+                      "text" : "yo",
+                      "uid" : "CS5up35807RObrIZouX2KT2yH7B2"
+                    },
+                    "-KTBpQiHi2jn6Oldaxp7" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Get excited for the quiz boys and girls!",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTBpXjIQlxpjenGqVCc" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "always always",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBqfEN8YjawwV3Pns7" : {
+                      "name" : "Maryanne",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Hi Lemuel",
+                      "uid" : "ab6qZARMN3dFtEMd5R7WKR6g5sz1"
+                    },
+                    "-KTBql125BlD5Vj69QHj" : {
+                      "name" : "Lemuel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "who dat",
+                      "uid" : "ReP7kEr5BYQ1y1amiXgJeG2TGNE3"
+                    },
+                    "-KTBqs-1kT1spLZ0YMFZ" : {
+                      "name" : "Joshua",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "So, anyone got the answers yet?",
+                      "uid" : "sIzMSIeGjsPkBA3fRAdF4DwWEEh2"
+                    },
+                    "-KTBqtAnDVkll_qvxb95" : {
+                      "name" : "Lemuel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "^",
+                      "uid" : "ReP7kEr5BYQ1y1amiXgJeG2TGNE3"
+                    },
+                    "-KTBr30rWT2gpUEafzjw" : {
+                      "name" : "Rifat",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Alhumdullilah hopefully the great Huxford has mercy on our souls this week ",
+                      "uid" : "J50cPp60oCMu2GdLh6SQGIFcn6z2"
+                    },
+                    "-KTBrB0k56GuOgGr0BV2" : {
+                      "name" : "Naveen",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "hi",
+                      "uid" : "p9X2POvqWfQqOuwZ6ZFDC7yfXRp2"
+                    },
+                    "-KTBrCZTEkZkvq2vQ8q0" : {
+                      "name" : "Dustin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "hi naveen",
+                      "uid" : "m15sV9XEZXgCTc4u2fIB1k2eD9j2"
+                    },
+                    "-KTBrEK1ndwukj_XJc40" : {
+                      "name" : "Naveen",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "hi :)",
+                      "uid" : "p9X2POvqWfQqOuwZ6ZFDC7yfXRp2"
+                    },
+                    "-KTBrExyVM1ItzfFuSHC" : {
+                      "name" : "Samuel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "yeah boi",
+                      "uid" : "9YFJPKenmBZS5necx3rjcAQEnHA2"
+                    },
+                    "-KTBrJF8ffyH5Wd3EHop" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "I have no idea",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTBrKVaRucESw4Zd0OO" : {
+                      "name" : "William",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "true",
+                      "uid" : "ewibHEb7yzf8G9OTr4D79YnoeXD3"
+                    },
+                    "-KTBrL0-vEZMoa0k9GJZ" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "What is decorating?",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTBrR0NYCMgqhwn2esE" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Decorating in the sense of adding extra functionality to a class or object",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBrdhmjqF1VYDs16h7" : {
+                      "name" : "Kwan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "bottom of slide 3",
+                      "uid" : "uQMxIFdyrFgcUbadQdWm6bGp2In2"
+                    },
+                    "-KTBrgwEN2Dmvp6fPMPz" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "\"Decorators are a design pattern that is used to separate modification or decoration of a class without modifying the original source code. In Angular, decorators are functions that allow a service, directive or filter to be modified prior to its usage.\"",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBrjJ_-RMCD92EWFx4" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "This is helpful and all but doesn't anybody have no idea what he's on about half the time?",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTBrlzovu7Zd25hHHOY" : {
+                      "name" : "Alexander",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "yes",
+                      "uid" : "mws2fyC9anNOa8fURriwMhyI8q12"
+                    },
+                    "-KTBrodZEEiZPkaZ6nYk" : {
+                      "name" : "Kwan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "nek minite stephen is reading this",
+                      "uid" : "uQMxIFdyrFgcUbadQdWm6bGp2In2"
+                    },
+                    "-KTBrq60kA44uNAyjHlN" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Good ",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTBrrXdmI518aUXKGZk" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "He should feel our pain",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTBrtfaWlCEG392mN_b" : {
+                      "name" : "Stephen",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "hi",
+                      "uid" : "XfpIBb6xAMUBO6CFBWhc6Kv5ZXf2"
+                    },
+                    "-KTBruCZI3LZhR5wAr6j" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "awks",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTBrvzeGBux2RljJ02L" : {
+                      "name" : "Yisi",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "hey",
+                      "uid" : "5Mdlhg01ZDXdy9etdFTeQBWAVG13"
+                    },
+                    "-KTBs5L3S1onPdxQNk9s" : {
+                      "name" : "Joshua",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Question C is slide 9",
+                      "uid" : "sIzMSIeGjsPkBA3fRAdF4DwWEEh2"
+                    },
+                    "-KTBsRors-QcfNZBrF7a" : {
+                      "name" : "Maryanne",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "b anyone?",
+                      "uid" : "ab6qZARMN3dFtEMd5R7WKR6g5sz1"
+                    },
+                    "-KTBsjlhlZZSCDIz_iim" : {
+                      "name" : "Yaik",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Bidirectional - When properties in the model get updated, so does the UI.  Unidirectional - Binds the value of the model to the view but it doesn't determine the if the value in the view has been changed by the user.",
+                      "uid" : "QCdvN4FVgJaZsKoAcDTo7T2sBF83"
+                    },
+                    "-KTBsvLZ2T6dwF0kW8IV" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "(Maybe) Bidirectional - The balance of a bank account if the value gets updated in real timeUnidirectional",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBt7Z01AIU1GXAQXv6" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Unidirectional - the title of a web app (updating the view using the DOM editor should not update the title name stored in the model)",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBtV6lwwS16ZP50XW7" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "undirectional: function updateMyNameValue(elem) {    // find scope variable of `myName` and update it    // find element in view and update it } <input type=\"text\" onchange=\"updateMyNameValue(this)\" value=\"\" />",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    }
+                  },
+                  "title" : "Week 10 Question 1"
+                },
+                "thread_2_id" : {
+                  "messages" : {
+                    "-KT4xJeIsP2Prl_0x4i2" : {
+                      "name" : "Anonymous",
+                      "text" : "Discuss Q2 here..."
+                    },
+                    "-KTBuPx7532Cw00SfS7W" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "a) What did Stephen say just before?",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBucFEtE9_3ji-rH0G" : {
+                      "name" : "Joshua",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "http is stateless",
+                      "uid" : "sIzMSIeGjsPkBA3fRAdF4DwWEEh2"
+                    },
+                    "-KTBudr2G-9OFeW7V0Uw" : {
+                      "name" : "Joshua",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "information is not shared between pages",
+                      "uid" : "sIzMSIeGjsPkBA3fRAdF4DwWEEh2"
+                    },
+                    "-KTBupVyqT5vA_sbMZis" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Ahh cool cool",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBvZVRKdJUwGfxDU0P" : {
+                      "name" : "Lemuel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "b has something to do with the requests having to be sent to the servers ",
+                      "uid" : "ReP7kEr5BYQ1y1amiXgJeG2TGNE3"
+                    },
+                    "-KTBw0fjmhx689Vrikhl" : {
+                      "name" : "Nicola",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "We handled a case like b in our Task Application I believe",
+                      "uid" : "110PYCgxrAU3jVTG8lMMVq5ht6e2"
+                    },
+                    "-KTBwSpgLzhOHqfasSOR" : {
+                      "name" : "Maryanne",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "b)Cookies, HTTP post request and client-side storage",
+                      "uid" : "ab6qZARMN3dFtEMd5R7WKR6g5sz1"
+                    },
+                    "-KTBwVG8RI9ffyPSzsqm" : {
+                      "name" : "Maryanne",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "If anyone need help",
+                      "uid" : "ab6qZARMN3dFtEMd5R7WKR6g5sz1"
+                    },
+                    "-KTBwXzx1PQiYS3NsV6B" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Is b) a bit ambiguous? \"How could it be passed around\"... in a SPA or MPA?",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBwauXt3G9vTgoSbOA" : {
+                      "name" : "Calvin",
+                      "photoUrl" : "https://lh4.googleusercontent.com/-GbU5NvxXvFM/AAAAAAAAAAI/AAAAAAAAAVA/Mz-w0GjdGqI/photo.jpg",
+                      "text" : "MPA i think",
+                      "uid" : "dWGs2NyWG5QBYpX3xfdKMtzCDnv1"
+                    },
+                    "-KTBwnqFzXl9cYfA2IfW" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "both to be safe haha",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBwsfIK_E7FNArlMBD" : {
+                      "name" : "Nicola",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "It's MPA, he confirmed with a few people",
+                      "uid" : "110PYCgxrAU3jVTG8lMMVq5ht6e2"
+                    }
+                  },
+                  "title" : "Week 10 Question 2"
+                },
+                "thread_3_id" : {
+                  "messages" : {
+                    "-KT4xLPXvuzSIGHUv0Ms" : {
+                      "name" : "Nicholas Wong",
+                      "text" : "Discuss Q3 here..."
+                    },
+                    "-KTBx3JcWHG6HLJc-YG-" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "A?",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTBxRQcCy9TVHBHL9Ie" : {
+                      "name" : "Biondi",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ng-repeat and searchKey? I guess...",
+                      "uid" : "XhfZFjXp3qgk6f6qAHeAQN9DmLi1"
+                    },
+                    "-KTBxlBNOkRr8xiYXYbI" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "would ng-class also decorate $scope?",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTByJHF8hs_5URFDdzg" : {
+                      "name" : "Yaik",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Thats what I thought too",
+                      "uid" : "QCdvN4FVgJaZsKoAcDTo7T2sBF83"
+                    },
+                    "-KTByJLLCmD9yzRk8hYT" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "lets decorate!",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTByYPXiZj1eOzABIz-" : {
+                      "name" : "Qibo",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ng-class and ng-repeat?",
+                      "uid" : "mNk7PMcoZYXTxRc6uOwfVFYAwqN2"
+                    },
+                    "-KTByZBrRaXKdgShLkaG" : {
+                      "name" : "Hugh",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "anyone got e?",
+                      "uid" : "biJrZwXiU1gzE7xPKUcS3b4iNYY2"
+                    },
+                    "-KTBye0nVJJw5_NpDjlZ" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "according to the docs: https://docs.angularjs.org/api/ng/directive/ngRepeat",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTByiZEKKvD57EiPnIH" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "e) I think ng-repeat supplies the $index",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTBymUOfCMgj4Uk-43j" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : ":)",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTByp8Pdunwj57RZwtE" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Is it ng-repeat or is it the controller?",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTBz2lGDgock_rlRAzG" : {
+                      "name" : "Abhijith",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "doesn't angular supply $index?",
+                      "uid" : "xZ7uK9bt6fZghl5RQt3vecdj2LC3"
+                    },
+                    "-KTBz6wWNBw9P91syrYF" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "\"Angular supplies $index, it is the ng-repeat index.\" ~ L10 Slide 14",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    }
+                  },
+                  "title" : "Week 10 Question 3"
+                },
+                "thread_4_id" : {
+                  "messages" : {
+                    "-KT4xN9vyngpQ10Ohaal" : {
+                      "name" : "Anonymous",
+                      "text" : "Discuss Q4 here..."
+                    },
+                    "-KTBzPfWkYapQTU71EwN" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "♌️♑️⛎♎️♉️\uD83D\uDD49",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTBzShCvJ-4dANNyjJz" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "That's what it looks like to me ...",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTBzsVX67N9z9uImVLK" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "justin pls",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTC--P42DPSLy6iZfTI" : {
+                      "name" : "Alexander",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "\uD83D\uDD1D",
+                      "uid" : "mws2fyC9anNOa8fURriwMhyI8q12"
+                    },
+                    "-KTC-E5FA_GdNsPFVVt-" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "\uD83D\uDCAF",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTC-J-VqEc6cAwTDozC" : {
+                      "name" : "Abhijith",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ded",
+                      "uid" : "xZ7uK9bt6fZghl5RQt3vecdj2LC3"
+                    },
+                    "-KTC-XtYWprTszhKKP7I" : {
+                      "name" : "Nicola",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "https://docs.angularjs.org/api/ng/directive/ngClass",
+                      "uid" : "110PYCgxrAU3jVTG8lMMVq5ht6e2"
+                    },
+                    "-KTC-gmOU-XqTaRFPnbC" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "im heading to the monash pub for a parma. Bye. ",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC-lgLNR88YyOqssMo" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "I'm inclined to do the same tbh",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTC-rMbQuEA5zLm316q" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "These questions.....",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC-v389VRpePTy1Jvn" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "cant wait to have thagt lovely salad, with salty chips and a delicious parma",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC-w2bAokMStGZH3lc" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Grab a pot too",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC-yNyKq6DT6f3CgUm" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "I think they are $15 today. Tuesday special ;)",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC0-6kNmFEP2CCLYsg" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Mmmmmmmm",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC0AsqZPeKip3ByHpn" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "I didn't even do the pre-reading quiz this week - I'll follow",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC0Hvxuxv4-MY0w0d9" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Look, I think Nick, that wasnt a wise decision. ",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC0MRw5kTi0ArnVu0n" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "You should know all of this Nick.",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC0Pj8EOCxIKTxVFAl" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "cmon nick",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTC0Yf2NWUwf4fn_Dv6" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "#GetYourShitTogetherNick",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC9swCmthSongMv-x7" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ANSWERS",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    }
+                  },
+                  "title" : "Week 10 Question 4"
+                },
+                "thread_5_id" : {
+                  "messages" : {
+                    "-KT4xPV4S-GnVv_vO66H" : {
+                      "name" : "Anonymous",
+                      "text" : "Discuss Q5 here..."
+                    },
+                    "-KTC0cGY915dR9l9Sp2H" : {
+                      "name" : "Yaik",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "mixture of quotess as in using \" and ' at the same time?",
+                      "uid" : "QCdvN4FVgJaZsKoAcDTo7T2sBF83"
+                    },
+                    "-KTC0iriwxNW-LK13gOF" : {
+                      "name" : "Alexander",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "which ones would work kids",
+                      "uid" : "mws2fyC9anNOa8fURriwMhyI8q12"
+                    },
+                    "-KTC0mxVW7ozDKmgksyV" : {
+                      "name" : "Hugh",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : ":/",
+                      "uid" : "biJrZwXiU1gzE7xPKUcS3b4iNYY2"
+                    },
+                    "-KTC0oxovkk0acQVFLpV" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : ":<",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTC0qtLeFkQrGMBVIGY" : {
+                      "name" : "Stephen",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "what does he mean when it says 'mixture of quotes'",
+                      "uid" : "XfpIBb6xAMUBO6CFBWhc6Kv5ZXf2"
+                    },
+                    "-KTC0t-8g02nMoMN7cpF" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "hi stephen",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTC0wPYKjgcsAn9mmkZ" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-abqSUBIXQZc/AAAAAAAAAAI/AAAAAAAAAiI/2Nt06JzEczQ/photo.jpg",
+                      "text" : "stringception",
+                      "uid" : "X67BNPVZJyYLbGvAvvbarKbDgLm2"
+                    },
+                    "-KTC0yKWfRw-zfvu08Wi" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "\"Use the force, Harry\" ~Gandalf",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC0ycRVvetNjNSfhpC" : {
+                      "name" : "Biondi",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "a. which quotes we are talking about?",
+                      "uid" : "XhfZFjXp3qgk6f6qAHeAQN9DmLi1"
+                    },
+                    "-KTC0z5kcv_KsOh2aRWL" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "mixing quotes",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC12OCYPqUCVA8gnZH" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "'view === \"edit\"'",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    },
+                    "-KTC15T3yD41HPj1SKyi" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Ill mix all of you in a minute.",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC1GX3ymHueWHDUYa6" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : ":x",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTC1HRhesnb4L2UEI-I" : {
+                      "name" : "Alexander",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ooh",
+                      "uid" : "mws2fyC9anNOa8fURriwMhyI8q12"
+                    },
+                    "-KTC1cX1b8g5Um4sM8UZ" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "⁉️",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTC228UUB3orsa2Cq0B" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "what is c) asking exactly?",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC2Fq8-aADGScPpIxy" : {
+                      "name" : "Abhijith",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "what are they all asking",
+                      "uid" : "xZ7uK9bt6fZghl5RQt3vecdj2LC3"
+                    },
+                    "-KTC2YM2hb-kLFkUaTOk" : {
+                      "name" : "Nicola",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "I think A is asking why are the use of the mixed quotes needed",
+                      "uid" : "110PYCgxrAU3jVTG8lMMVq5ht6e2"
+                    },
+                    "-KTC2_y7NtOR1AssW1jU" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "a. The mixture of quotes are used to do string matching. The single quote is used so the condition from string matching can be placed inside.  b. They would all work as long the string that you are trying to match is placed in the quotes (either single or double) for the string matching",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    },
+                    "-KTC2efHq3jvep17EQer" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "c?",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC2lwde7rjaFT4HGrN" : {
+                      "name" : "Abhijith",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "c) Maintain a property in $scope i.e., view, which is used in an ngShow directive and expression to determine if the View should be displayed or not.",
+                      "uid" : "xZ7uK9bt6fZghl5RQt3vecdj2LC3"
+                    },
+                    "-KTC2mcUFaJPLQDYpg-u" : {
+                      "name" : "Abhijith",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "maybe?",
+                      "uid" : "xZ7uK9bt6fZghl5RQt3vecdj2LC3"
+                    },
+                    "-KTC2vijhNGAHq76GLIN" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "that what Abhijith mentioned, and probably ensuring that each view has a unique name",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC9_zvdjmObF1tWxK-" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ANSWERS",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC9edn60WtwqFhTdWE" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "a) A quote within a quote (' ' within \" \" or vice versa_",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC9jalPFN05jkiuFRI" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "b) [missed it]",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC9lnlADZ7Rvk2VNhX" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "c) Each view must have a unique ID",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    }
+                  },
+                  "title" : "Week 10 Question 5"
+                },
+                "thread_6_id" : {
+                  "messages" : {
+                    "-KT4xSCICEyR66jYDh8q" : {
+                      "name" : "Anonymous",
+                      "text" : "Discuss Q6 here..."
+                    },
+                    "-KTC3wk0h6NfOkUW_Luk" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "b?",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    },
+                    "-KTC3xBTNb8tK_BBjWjY" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "anyone?",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    },
+                    "-KTC41XxTHP_7Ze1lz8L" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "User sees a text field with that placeholder",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC45rdBxzNoP-SSMkp" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Coder has the input field attached to the ng-model taskInput",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC468m6aCRuNz5D_44" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "I think",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC46CFy-vJfdgj_DEN" : {
+                      "name" : "Abhijith",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Coder perspective: Any data entered into the input element is bi-directionally bound to $scope.taskInput.",
+                      "uid" : "xZ7uK9bt6fZghl5RQt3vecdj2LC3"
+                    },
+                    "-KTC48DkKoE_5DS9l8_v" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "^",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC4Z4kfNuVpyf1sPTe" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Thanks heaps :)",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    },
+                    "-KTC9OiT56-B_zVtKFVv" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "a) User perspective - a button is shown but disabled",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC9YpFybAS7HIRk6lM" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "b) A bidirectional data binding is created for the input field",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    }
+                  },
+                  "title" : "Week 10 Question 6"
+                },
+                "thread_7_id" : {
+                  "messages" : {
+                    "-KT4xWUJ-bBJNjv2nPWF" : {
+                      "name" : "Anonymous",
+                      "text" : "Discuss Q7 here..."
+                    },
+                    "-KTC4cNwR3C89vshgkpy" : {
+                      "name" : "Stephen",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "first",
+                      "uid" : "XfpIBb6xAMUBO6CFBWhc6Kv5ZXf2"
+                    },
+                    "-KTC4kJ5Blwfj9rSnQHb" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "2nd",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTC5-gSbBADG4pfekOY" : {
+                      "name" : "Abhijith",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "now what's the answer for first and 2nd :)",
+                      "uid" : "xZ7uK9bt6fZghl5RQt3vecdj2LC3"
+                    },
+                    "-KTC5CEDtyugg9-B57Wb" : {
+                      "name" : "Shashika",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Can anyone explain what part b is expecting? ",
+                      "uid" : "DdAaMQcIr7g289FrqDuMi3FaBjE3"
+                    },
+                    "-KTC5EB7F5Qn14xcBsq4" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : " \uD83D\uDDFF",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTC5GR4TM6iSJzZDWJ4" : {
+                      "name" : "Shashika",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Legend ^",
+                      "uid" : "DdAaMQcIr7g289FrqDuMi3FaBjE3"
+                    },
+                    "-KTC5Gs2Gszf-0CPhYCr" : {
+                      "name" : "Kwan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "basically rewrite it without using temptask",
+                      "uid" : "uQMxIFdyrFgcUbadQdWm6bGp2In2"
+                    },
+                    "-KTC5I1sKS33uploEZ59" : {
+                      "name" : "Calvin",
+                      "photoUrl" : "https://lh4.googleusercontent.com/-GbU5NvxXvFM/AAAAAAAAAAI/AAAAAAAAAVA/Mz-w0GjdGqI/photo.jpg",
+                      "text" : "^",
+                      "uid" : "dWGs2NyWG5QBYpX3xfdKMtzCDnv1"
+                    },
+                    "-KTC5I6MVyOWPwSb-ezQ" : {
+                      "name" : "Kwan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "stephen says you only need one line of code",
+                      "uid" : "uQMxIFdyrFgcUbadQdWm6bGp2In2"
+                    },
+                    "-KTC5T3HWf1ViHq9UybH" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ahh just for the category field",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC5qnQZZkb_Z8cZ4lP" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "$scope.tasksAM[-1].category = $scope.categoryInput;",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    },
+                    "-KTC5sF7pHjC1x6dgWvy" : {
+                      "name" : "Manan",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Pretty sure",
+                      "uid" : "S2f7zJExOZhbX05m0UnDCbWR7Re2"
+                    },
+                    "-KTC65DhhEbCvAGqBJT9" : {
+                      "name" : "Biondi",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "$scope.tasksAM[index].category = $scope.categoryInput;",
+                      "uid" : "XhfZFjXp3qgk6f6qAHeAQN9DmLi1"
+                    },
+                    "-KTC66saTFmyyXvewm-s" : {
+                      "name" : "Biondi",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "why -1 though?",
+                      "uid" : "XhfZFjXp3qgk6f6qAHeAQN9DmLi1"
+                    },
+                    "-KTC6MpfsepJN57rcA8I" : {
+                      "name" : "Christiana",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "because the length includes 0",
+                      "uid" : "H3HViuyv3ue2XYldp6EMo6esiyJ2"
+                    },
+                    "-KTC9Df9ShFaMY6zYG38" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ANSWERS",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC9FEFFNnxxZFlBhwo" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "a) Takes the user back to the default screen/view",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC9GYPD0ChnQdR_SxW" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "b) tasksAM[tasksAM.length - 1].controller = $scope.categoryInput;",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    }
+                  },
+                  "title" : "Week 10 Question 7"
+                },
+                "thread_8_id" : {
+                  "messages" : {
+                    "-KT4xZAp60V8AEmgHwrd" : {
+                      "name" : "Anonymous",
+                      "text" : "Discuss Q8 here..."
+                    },
+                    "-KTC6FI9KbQe_ZA51KXe" : {
+                      "name" : "Robert",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "zzz",
+                      "uid" : "FWy5LiZIg2MBvgGfW9F3TdaqLcx2"
+                    },
+                    "-KTC6oD8_I3EpCFhAQSu" : {
+                      "name" : "Naveen",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : ";)",
+                      "uid" : "p9X2POvqWfQqOuwZ6ZFDC7yfXRp2"
+                    },
+                    "-KTC6ug99V8uxQOYJUHj" : {
+                      "name" : "Stephen",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "3rd",
+                      "uid" : "XfpIBb6xAMUBO6CFBWhc6Kv5ZXf2"
+                    },
+                    "-KTC6wFEK2vNVUXoN_cg" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "4rd",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTC70yaglCoGW8j4yR7" : {
+                      "name" : "Justin",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "5rd",
+                      "uid" : "idZPBPsORLPB1etjrfp8XdJOH4w1"
+                    },
+                    "-KTC7MncgocE_zQdiHTS" : {
+                      "name" : "Shashika",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "^'",
+                      "uid" : "DdAaMQcIr7g289FrqDuMi3FaBjE3"
+                    },
+                    "-KTC7j-zYLjBk1ykotP4" : {
+                      "name" : "Jimmy",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "I swear, i would get so excited if woopie goldberg walked in right now!!!!!",
+                      "uid" : "MbGIVAlHiLO2CP0J6eX5Prxm7Cs2"
+                    },
+                    "-KTC88Ezy0Pi-MAFHm0B" : {
+                      "name" : "Joshua",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Good work everyone! Best of luck on your results and future endeavours! ",
+                      "uid" : "sIzMSIeGjsPkBA3fRAdF4DwWEEh2"
+                    },
+                    "-KTC8E1VaIXks9pNP7Qs" : {
+                      "name" : "Lemuel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Cheers, Joshua! Good luck to you too, matey! ",
+                      "uid" : "ReP7kEr5BYQ1y1amiXgJeG2TGNE3"
+                    },
+                    "-KTC8GakZiZ8mb_qpF8X" : {
+                      "name" : "Yaik",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "Bye everyone have a good weekend",
+                      "uid" : "QCdvN4FVgJaZsKoAcDTo7T2sBF83"
+                    },
+                    "-KTC8HWUmWW8UUY3DqkZ" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "ggwp all",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC8MhTHR137ZRVnAgY" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "bg",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    },
+                    "-KTC8OFQIyxg_ZPNBz-V" : {
+                      "name" : "Nicholas",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "bm",
+                      "uid" : "bKV3m8Z2VxaFKpYGAlvZWREnQyD2"
+                    },
+                    "-KTC8RfiWmz8DfobKkDj" : {
+                      "name" : "Daniel",
+                      "photoUrl" : "https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg",
+                      "text" : "reported",
+                      "uid" : "JiZu1gBHOZTIIYBJcyKKfRPXdMj2"
+                    }
+                  },
+                  "title" : "Week 10 Question 8"
+                }
+              }
+        },
+        "week_11_id" : {
+          "threads" : {
+            "thread_1_id" : {
+              "title" : "Week 11 Question 1"
+            }
+          }
+        }
+    }
+}

@@ -287,3 +287,11 @@ main, .messages-card {
 #class-chat-title {
   margin-left: 40px;
 }
+
+#anonymous-post label {
+  margin-left: 16px;
+}
+
+#anonymous-post .mdl-checkbox__label {
+  color: #757575;
+}

@@ -84,11 +84,15 @@ ClassChat.prototype.saveMessage = function(e) {
 
     /* Shortcut for current user */
     var currentUser = this.auth.currentUser;
+    var message_name = currentUser.displayName.split(" ")[0]; // get first name
+
+    if ($('#anonymous-post label').hasClass('is-checked')) {
+      message_name = 'Anonymous';
+    }
 
     /* Make sure to bind this to 'this' for the reference point */
     this.threadsRef.child(thread_id).child('messages').push({
-    // this.database.ref('threads').child(thread_id).child('messages').push({
-      name: currentUser.displayName.split(" ")[0], // get first name
+      name: message_name,
       text: $message_input.val(),
       photoUrl: currentUser.photoURL || '/images/profile_placeholder.png',
       uid: currentUser.uid
