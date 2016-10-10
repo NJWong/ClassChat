@@ -33,10 +33,26 @@ ClassChat.prototype.initFirebase = function() {
   this.auth.onAuthStateChanged(this.onAuthStateChanged.bind(this));
 };
 
+ClassChat.prototype.loadWeek = function(week_number) {
+  var week_id = 'week_' + week_number + '_id';
+
+  this.weekRef = this.database.ref('weeks/' + week_id);
+  this.weekRef.off();
+
+  var setWeek = function(data) {
+
+    this.loadThreads();
+
+  }.bind(this);
+  this.weekRef.on('child_added', setWeek);
+  this.weekRef.on('child_changed', setWeek);
+
+};
+
 ClassChat.prototype.loadThreads = function() {
 
   /* Threads */
-  this.threadsRef = this.database.ref('threads');
+  this.threadsRef = this.weekRef.child('threads');
 
   /* Make sure we remove all previous listeners */
   this.threadsRef.off();
@@ -45,6 +61,9 @@ ClassChat.prototype.loadThreads = function() {
   var setThread = function(data) {
     var mdl_footer = $('.mdl-mini-footer');
     var val = data.val();
+
+    console.log(data.key);
+
     this.displayThread(data.key, val.title);
     this.loadMessages(data.key);
     mdl_footer.fadeIn(500);
@@ -57,7 +76,9 @@ ClassChat.prototype.loadThreads = function() {
 /** Loads chat messages history and listens for upcoming ones */
 ClassChat.prototype.loadMessages = function(thread_id) {
 
-  var messagesRef = this.database.ref('threads/' + thread_id + '/messages');
+  // var messagesRef = this.database.ref('threads/' + thread_id + '/messages');
+  var messagesRef = this.threadsRef.child(thread_id + '/messages');
+
   messagesRef.off();
 
   var setMessage = function(data) {
@@ -151,9 +172,11 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
     }
 
     /* We load currently existing chat messages */
-    this.loadThreads();
+    // this.loadThreads();
 
-    console.log(this._sessionRef);
+    this.loadWeek(10);
+
+    // console.log(this._sessionRef);
 
   } else { // user is signed out
     /* Hide user's profile and sign-out button */
