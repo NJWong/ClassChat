@@ -17,6 +17,17 @@ function ClassChat() {
   this.signOutButton.addEventListener('click', this.signOut.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
 
+  /* Event handlers for week selection in the side nav */
+  $('#week_10_link').click(function() {
+    $('.mdl-layout__drawer-button').click();
+    this.loadWeek(10);
+  }.bind(this));
+
+  $('#week_11_link').click(function() {
+    $('.mdl-layout__drawer-button').click();
+    this.loadWeek(11);
+  }.bind(this));
+
   /* Initialise a Firebase connection */
   this.initFirebase();
 }
@@ -61,9 +72,6 @@ ClassChat.prototype.loadThreads = function() {
   var setThread = function(data) {
     var mdl_footer = $('.mdl-mini-footer');
     var val = data.val();
-
-    console.log(data.key);
-
     this.displayThread(data.key, val.title);
     this.loadMessages(data.key);
     mdl_footer.fadeIn(500);
@@ -174,7 +182,7 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
     /* We load currently existing chat messages */
     // this.loadThreads();
 
-    this.loadWeek(10);
+    this.loadWeek(11);
 
     // console.log(this._sessionRef);
 
