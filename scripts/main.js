@@ -18,15 +18,15 @@ function ClassChat() {
   this.signInButton.addEventListener('click', this.signIn.bind(this));
 
   /* Event handlers for week selection in the side nav */
-  $('#week_10_link').click(function() {
-    $('.mdl-layout__drawer-button').click();
-    this.loadWeek(10);
-  }.bind(this));
-
-  $('#week_11_link').click(function() {
-    $('.mdl-layout__drawer-button').click();
-    this.loadWeek(11);
-  }.bind(this));
+  // $('#week_10_link').click(function() {
+  //   $('.mdl-layout__drawer-button').click();
+  //   this.loadWeek(10);
+  // }.bind(this));
+  //
+  // $('#week_11_link').click(function() {
+  //   $('.mdl-layout__drawer-button').click();
+  //   this.loadWeek(11);
+  // }.bind(this));
 
   /* Initialise a Firebase connection */
   this.initFirebase();
@@ -45,6 +45,8 @@ ClassChat.prototype.initFirebase = function() {
 };
 
 ClassChat.prototype.loadWeek = function(week_number) {
+  console.log('Loading week ' + week_number);
+
   var week_id = 'week_' + week_number + '_id';
 
   this.weekRef = this.database.ref('weeks/' + week_id);
