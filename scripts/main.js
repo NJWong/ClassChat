@@ -184,7 +184,7 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
     /* We load currently existing chat messages */
     // this.loadThreads();
 
-    this.loadWeek(12);
+    this.loadWeek(10);
 
     // console.log(this._sessionRef);
 
