@@ -17,17 +17,6 @@ function ClassChat() {
   this.signOutButton.addEventListener('click', this.signOut.bind(this));
   this.signInButton.addEventListener('click', this.signIn.bind(this));
 
-  /* Event handlers for week selection in the side nav */
-  // $('#week_10_link').click(function() {
-  //   $('.mdl-layout__drawer-button').click();
-  //   this.loadWeek(10);
-  // }.bind(this));
-  //
-  // $('#week_11_link').click(function() {
-  //   $('.mdl-layout__drawer-button').click();
-  //   this.loadWeek(11);
-  // }.bind(this));
-
   /* Initialise a Firebase connection */
   this.initFirebase();
 }
@@ -175,11 +164,6 @@ ClassChat.prototype.onAuthStateChanged = function(user) {
       /* Show the question threads */
       $('#question-threads-container').fadeIn(200);
     });
-
-    /* Show new thread link if the user is an Admin */
-    if (this.auth.currentUser.uid === 'dXETuP9dLiZDirHTyJv9ldu9hrE3') {
-      console.log("TODO - admin button");
-    }
 
     /* We load currently existing chat messages */
     // this.loadThreads();
